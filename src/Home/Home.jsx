@@ -33,7 +33,7 @@ const Home = () => {
                     <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet our Users</h2>
                 </div>
                 {
-                    isPending && error === "" && <p>Loading</p>
+                    isPending && error === "" && <div className="w-full flex justify-center mt-20"><div className="loader "/></div>
                 }
                 {
                     !isPending && error && <p className="text-red-500 font-bold text-xl text-center ">{error} !!!</p>
